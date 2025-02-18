@@ -118,51 +118,6 @@ function playGame(){
     }
         
 }       
-            
-
-
-    //         if(pc === cc){
-    //             console.log("Draw.");
-    //         }
-    //         else if(pc ==="rock" && cc==="paper"){
-    //             compScore++;
-    //             console.log("Paper beats Rock. Computer Wins.");
-    //         }
-    //         else if(pc ==="rock" && cc==="scissors"){
-    //             playerScore++;
-    //             console.log("Rock beats scissors. You Win.");
-    //         }
-    //         else if(pc ==="paper" && cc==="rock"){
-    //             playerScore++;
-    //             console.log("Paper beats Rock. You Win.");
-    //         }
-    //         else if(pc ==="paper" && cc==="scissors"){
-    //             compScore++;
-    //             console.log("Scissors beats Paper. Computer Wins.");
-    //         }
-    //         else if(pc ==="scissors" && cc==="rock"){
-    //             compScore++;
-    //             console.log("Rock beats Scissors. Computer Wins.");
-    //         }
-    //         else if(pc ==="scissors" && cc==="paper"){
-    //             playerScore++;
-    //             console.log("Scissors beats Paper. You Win.");
-    //         }
-    //         console.log('End of Round ' + i + '\n'+'Score: Player - '+ playerScore+' Computer - '+ compScore);
-    // }
-
-    //         if(compScore===playerScore){
-    //             console.log("Draw.");
-    //         }
-    //         else if(compScore>playerScore){
-    //             console.log("Computer Wins.");
-    //         }
-    //         else if(playerScore>compScore){
-    //             console.log("Congratulations! You won.");
-    //       }
-
-             
-//}
 
 function start(){
     let entry = prompt("ROCK PAPER SCISSORS. TYPE START TO BEGIN.");
