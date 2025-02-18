@@ -67,19 +67,23 @@ function playGame(entry){
 
     let pc = entry;
     let cc = getComputerChoice();
-    compDisplay.textContent = `The computer plays ${cc}`;
+    compDisplay.textContent = `The computer played ${cc}`;
 
     let output = logic(pc,cc);
     inst.textContent=output;
     let answer = scoring(output);
     result.textContent = answer;
-    score.textContent = `Player - ${playerScore} Computer - ${compScore}`;
+    score.textContent = `Player - ${playerScore} ✤ Comp - ${compScore}`;
     
     if(playerScore===5){
         score.textContent = ("Congratulations! You won the game");
+        alert("Congratulations! You won the game");
+        location.reload();
     }
     else if(compScore===5){
         score.textContent = ("Computer wins the game");
+        alert("You lost the game. Try again");
+        location.reload();
     }
         
 };      
@@ -107,6 +111,11 @@ scoreboard.appendChild(score);
 
 body.appendChild(scoreboard);
 scoreboard.setAttribute("style","width: 400px; background-color: rgb(239, 162, 135); padding: 10px 15px; border-radius: 5px; font-size: 24px; text-align: center;");
+playerDisplay.setAttribute("style","margin-bottom: 0;");
+compDisplay.setAttribute("style","margin: 0;");
+inst.setAttribute("style","margin: 0;");
+result.setAttribute("style","margin-top: 24px; margin-bottom: 0");
+score.setAttribute("style","margin-top: 0;");
 
 
 rock.addEventListener("click", (e) =>{
